@@ -8,9 +8,8 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-
 import { cn } from "@/lib/utils";
-import { CircleUser, Menu, HorseIcon } from "lucide-react";
+import { CircleUser, Menu, Horse } from "lucide-react";
 import { NavLink, Outlet } from "react-router-dom";
 import { navItems } from "../App";
 
@@ -35,7 +34,7 @@ const DesktopNav = () => (
       to="/"
       className="flex items-center gap-2 text-lg font-semibold md:text-base"
     >
-      <HorseIcon className="h-6 w-6" />
+      <Horse className="h-6 w-6" />
       <span className="sr-only">Horse Haven</span>
     </NavItem>
     {navItems.map((item) => (
@@ -60,7 +59,7 @@ const MobileNav = () => (
           to="/"
           className="flex items-center gap-2 text-lg font-semibold"
         >
-          <HorseIcon className="h-6 w-6" />
+          <Horse className="h-6 w-6" />
           <span className="sr-only">Horse Haven</span>
         </NavItem>
         {navItems.map((item) => (
